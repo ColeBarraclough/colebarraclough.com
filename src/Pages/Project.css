@@ -1,0 +1,48 @@
+.project {
+    margin: 5px;
+    border-bottom: thin solid darkgrey;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 10% 90%;
+}
+
+.project:hover {
+    background-color: darkgrey;
+}
+
+.project-title {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 1;
+}
+
+.project-description {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.project-image {
+    margin: 10px;
+    align-self: center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    height: 64px;
+    width: 64px;
+}
+
+
+.project-github-link {
+    justify-self: end;
+    align-self: end;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    height: inherit;
+    width: inherit;
+
+}
+
+.logo:hover {
+    width: 42px;
+    height: 42px;
+}

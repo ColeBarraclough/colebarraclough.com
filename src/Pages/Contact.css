@@ -1,0 +1,131 @@
+
+
+.contact {
+    border-top: 5px solid #f0f0f0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    gap: 10%;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.form-control {
+    font-size: 24px;
+    border: none none none 5px solid #f2f2f2;
+    background: #525252;
+}
+
+.form {
+    display: grid;
+    height: inherit;
+    width: 60vw;
+    grid-gap: 5%;
+    grid-template-rows: 5% 95%;
+    grid-template-columns: 50% 50%;
+}
+
+.row-1 {
+    width: inherit;
+    display: grid;
+    grid-gap: 5%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+.row-2 {
+    display: grid;
+    grid-gap: 10%;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 5vh;
+}
+
+#message {
+    align-self: top;
+    height: 40vh;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    resize: vertical;
+    
+}
+#contact {
+    font-size: 64px;
+}
+
+#name {
+    height: 5vh;
+}
+
+#email {
+    height: 5vh;
+}
+
+.submit-button {
+    color: #787878;
+    font-size: 32px;
+    background: inherit;
+    /* border: none; */
+    border-bottom: 1px solid black;
+    justify-self: center;
+    height: 8vh;
+    width: 20vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.submit-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.submit-button span:after {
+    content: '✉';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.submit-button:hover span {
+    padding-right: 50px;
+}
+
+.submit-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+#fail {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    justify-content: center;
+    color: #850009;
+}
+
+#success {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    justify-content: center;
+    color: #f2f2f2;
+}

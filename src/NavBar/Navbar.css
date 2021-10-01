@@ -1,0 +1,38 @@
+.navbar {
+    width: 15vw;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+    /* border-right: 0.5px solid white; */
+    background-color: #757575;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.other-links-container {
+    height: 70vh;
+    border-right: 0.5px solid white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    background: rgb(157,157,157);
+    background: linear-gradient(180deg, #757575 0%, rgba(56,56,56,1) 80%, rgba(28,28,28,1) 100%, rgba(41,41,41,1) 100%);
+}
+
+.social-link {
+    justify-self: center;
+    align-self: center;
+}
+
+.social-img {
+    height: 15vh;
+    width: 15vh;
+}
+
+.black {
+    background-color: black;
+}

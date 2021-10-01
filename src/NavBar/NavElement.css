@@ -1,0 +1,28 @@
+.nav-link {
+    display: flex;
+    font-size: 32px;
+    height: 10vh;
+    border-bottom: thin black solid;
+    border-right: thin white solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover {
+    background-color: #525252;
+}
+
+.nav-link-active {
+    display: flex;
+    font-size: 24px;
+    height: 10vh;
+    border-bottom: thin black solid;
+    background-color: #525252;
+    align-items: center;
+    justify-content: center;
+}
+
+
+a {
+    text-decoration: none; /* no underline */
+  }
